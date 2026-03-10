@@ -15,6 +15,7 @@ type Config struct {
 	DBPass     string
 	DBName     string
 	ServerPort string
+	JWTSecret  string
 }
 
 func Load() *Config {
@@ -32,6 +33,7 @@ func Load() *Config {
 		DBPass:     MustGetEnv("DB_PASS"),
 		DBName:     MustGetEnv("DB_NAME"),
 		ServerPort: getEnv("SERVER_PORT", "8080"),
+		JWTSecret:  getEnv("JWT_SECRET", "default-secret-key"),
 	}
 
 	return cfg

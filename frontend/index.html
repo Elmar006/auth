@@ -59,6 +59,18 @@
 
             <!-- Сообщение об успехе/ошибке -->
             <div id="message" class="message"></div>
+
+            <!-- Профиль пользователя (скрыт по умолчанию) -->
+            <div class="auth-form" id="profile-form" style="display: none;">
+                <h2>Профиль</h2>
+                <div class="profile-info">
+                    <p><strong>Имя:</strong> <span id="profile-name"></span></p>
+                    <p><strong>Email:</strong> <span id="profile-email"></span></p>
+                </div>
+                <button id="logoutBtn" class="btn-primary">Выйти</button>
+                <button id="testMeBtn" class="btn-primary" style="margin-top: 10px;">Тест /me</button>
+                <pre id="meResult" style="display: none; background: #f4f4f4; padding: 10px; margin-top: 10px;"></pre>
+            </div>
         </div>
     </div>
 
